@@ -10,7 +10,7 @@
 
 3)
 
-![image](https://user-images.githubusercontent.com/89645350/233876981-41378fb5-61b8-44c7-9b6d-eed266ab161b.png
+![image](https://user-images.githubusercontent.com/89645350/233876981-41378fb5-61b8-44c7-9b6d-eed266ab161b.png)
 
 4)
 
