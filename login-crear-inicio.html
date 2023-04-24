@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login-crear-inicio.css">
+    <link rel="stylesshet" href="https://use.fontawsome.com/releases/v5.6.3/css/all.css">
+    <script src="https://kit.fontawesome.com/fa849703be.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container crear-cuenta-container">
+            <form action="#">
+                <h1>Crear cuenta</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <span>Use un email para registrarte</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Correo electrónico">
+                <input type="password" placeholder="Password">
+                <button>Inscribirse</button>
+            </form>
+        </div>
+
+        <div class="form-container iniciar-sesion-container">
+            <form action="#">
+                <h1>Iniciar sesión</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <span>Use un email para registrarte</span>
+                <input type="email" placeholder="Correo electrónico">
+                <input type="password" placeholder="Password">
+                <a href="login-recuperar.html"><span>¿Olvidaste la contraseña?</span></a>
+                <button>Iniciar sesión</button>
+            </form>
+        </div>
+        
+        <div class="other-container">
+            <div class="other">
+                <div class="other-panel other-left">
+                    <h1>Iniciar sesión</h1>
+                    <p>Si ya estas registrado puedes iniciar sesión aquí.</p>
+                    <button class="press" id="iniciar-sesion">Iniciar sesión</button>
+                </div>
+                <div class="other-panel other-right">
+                    <h1>Crear nueva cuenta</h1>
+                    <p>Si aún no tienes cuenta, puedes registrarte aquí.</p>
+                    <button class="press" id="crear-cuenta">Crear nueva cuenta</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        const crearCuentaButton = document.getElementById("crear-cuenta");
+        const iniciarSesionButton  = document.getElementById("iniciar-sesion");
+        const container  = document.getElementById("container");
+
+        crearCuentaButton.addEventListener('click',()=>{
+            container.classList.add("right-panel-active");
+        })
+
+        iniciarSesionButton.addEventListener('click',()=>{
+            container.classList.remove("right-panel-active");
+        })
+
+
+
+    </script>
+</body>
+</html>
